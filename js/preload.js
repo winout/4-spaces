@@ -1,3 +1,11 @@
+﻿ehsethsdrth
+﻿
+﻿
+﻿
+﻿
+﻿
+﻿
+﻿
 ﻿chrome.extension.onRequest.addListener(function (req, sender,sendResponse){
 	if(req.method == 'init'){
     chrome.extension.sendRequest({method: "getSet"}, function(r){
