@@ -1,0 +1,51 @@
+body {
+  width: 200px;
+  margin: 0;
+}
+
+.title {
+  border-bottom:1px solid #DBDADA;
+  background-color:#E9E9E9;
+  font-weight:700;
+  font-family:Arial;
+  padding:3px 3px 3px 6px;
+}
+
+a.table_link {
+  text-align:center;
+  display:block;
+  padding-top:6px;
+  padding-bottom:5px;
+  margin-bottom:0;
+  border:1px solid #DBDADA;
+  border-radius:3px;
+}
+
+a.table_link:hover {
+  background-color:#DBDADA;
+}
+
+input[type=checkbox] {
+  vertical-align:middle;
+}
+
+label {
+  display:block;
+  padding:3px;
+}
+
+table {
+  width:100%;
+  border-collapse:collapse;
+  border:0;
+}
+
+table td {
+  padding:2px;
+}
+
+ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+}

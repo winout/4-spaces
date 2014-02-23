@@ -1,0 +1,43 @@
+﻿{
+    "name" : "4Spaces.ru", 
+    "version" : "1.0", 
+    "description" : "Дополнительные функции для Spaces.ru",
+    "background": { "scripts": ["js/fn.js", "js/bg.js"] },
+    "manifest_version": 2,
+   
+ "permissions": ["<all_urls>", "contextMenus", "notifications", "tabs", "unlimitedStorage"],
+
+  "web_accessible_resources": [
+    "spaces/img/*",
+    "spaces/css/*",
+    "css/*",
+    "img/*"
+  ],
+  
+  
+    "content_scripts": [
+    {
+      "all_frames": true,
+      "matches": ["http://*.spaces.ru/*"],
+      "js": ["js/preload.js"],
+      /*"css": ["css/test.css"],*/
+      "run_at": "document_start"
+    },
+    {
+      "all_frames": true,
+      "js": ["js/postload.js"],
+      "matches": ["http://spaces.ru/*", "http://*.spaces.ru/*"],
+      "run_at": "document_end"
+    }],
+
+   "icons": { "48": "img/enable.png", 
+              "128": "img/enable.png"
+    },
+   "options_page": "options.html#main",
+   
+    "page_action" : {
+		"default_title" : "Настроить дополнение",
+        "default_icon" : "img/enable.png",
+        "default_popup" : "popup.html"
+    }
+}

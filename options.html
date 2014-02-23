@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link href="css\options.css" rel="stylesheet" />
+	<title>Настройки 4Spaces.ru</title>
+  <audio id="notifesound"src="" type="audio/mp3" preload="true"></audio>
+</head>
+<body>
+	<header id="header">
+		<img src="img/enable.png" style=" width: 48px; height: 48px;">
+		<h1>Настройки 4Spaces.ru</h1>
+	</header>
+
+	<div id="container">
+		<ul class="nav">
+			<li><a href="#main">Основные</a></li>
+			<li><a href="#notife">Уведомления</a></li>
+			<li><a href="#style">Интерфейс</a></li>
+			<li><a href="#plug">Дополнительно</a></li>
+			<li class="spacer"></li>
+			<li><a href="#info">Информация</span></a></li>
+		</ul>
+	</div>
+  
+   <div id="tabs">
+
+		<div id="main" class="tab">
+			<h1>Основные</h1>
+			Самые важные настройки.
+			<div class="headChild">
+				<label><input type="checkbox" id="enable">Включить дополнение</label>
+				<label><input type="checkbox" id="icon">Показывать иконку в адресной строке</label>
+			</div>
+		</div>
+
+		
+		<div id="notife" class="tab">
+			<h1>Уведомления</h1>
+			<p>При получении новой почты, журнала, ленты вылазиет уведомление об этом происшествии.</p>
+			<label class="head"><input type="checkbox" id="checkenable">Включить проверку</label>
+			<div class="headChild">
+				<label><input type="checkbox" id="checkmes">Почты</label>
+				<label><input type="checkbox" id="checkjur">Журнала</label>
+				<label><input type="checkbox" id="checkrss">Ленты</label>
+			</div>
+			Интервал проверки уведомлений<br />
+			<select id="update_time">
+				<option value="0">0 сек.</option>
+				<option value="3000">3 сек.</option>
+				<option value="5000">5 сек.</option>
+				<option value="10000">10 сек.</option>
+				<option value="15000">15 сек.</option>
+			</select><br /><br />
+      
+      <label><input type="checkbox" id="checkaudio">Звуковое уведомление</label><br />
+      <select id="notaudio">
+                  <option value="1">Выстрел</option>
+                  <option value="2">Марио</option>
+                  <option value="3">Бульк</option>
+                  <option value="4">Магия</option>
+                  <option value="5">Сигнал машины</option>
+				      </select>
+      <a id="play" title="Проиграть"><img src="img/play.png" alt="Проиграть"></a>
+      
+      
+    </div>
+
+		
+		<div id="style"  class="tab">
+			<h1>Интерфейс</h1>
+			<p>Настройки пользовательского интерхвейса.</p>
+			<label class = "head"><input type="checkbox" id="navi">Улучшать верхнюю панель</label>
+			<div class="headChild">
+        <label><input type="checkbox" id="naviOldIcon">Старые иконки(цветные)</label>
+        <label><input type="checkbox" id="navismall">Делать тоньше</label>
+				<label><input type="checkbox" id="navifix">Фиксировать</label>
+			</div>
+			Видимость панели при прокрутке (%)<br>
+			<input type = "number" min = "0" max = "100" step = "5" id = "opna" style = "width: 40px; height: 19px;">
+			<input type = "range" id = "foropna" value = "30" min = "0" max = "100" step = "5" style="vertical-align: middle;"><br />
+			<hr />
+			<label class = "head"><input type="checkbox" id="add">Изменять на странице</label>
+			<div class="headChild">
+				<label><input type="checkbox" id="watch">Добавлять часы (красивые)</label>
+        <label><input type="checkbox" id="redirect">Оптимизировать ссылки на внешние сайты</label>
+        <label><input type="checkbox" id="DnDupload">DnDupload</label>
+			</div>
+      
+			<label class = "head"><input type="checkbox" id="hide">Убирать с страниц</label>
+			<div class="headChild">
+      
+				<label><input type="checkbox" id="mcblog">Микроблог (Что у вас нового?)</label>
+				<label><input type="checkbox" id="reklam">Рекламу</label>
+				<label><input type="checkbox" id="share">Рассказать друзьям (ВКонтакте, Одноклассники, Facebook)</label>
+        <label><input type="checkbox" id="copylink">ссылка на стр. [коп]</label>        
+        <label><input type="checkbox" id="mobtop">Mobtop.ru - рейтинг моб.сайтов</label> 
+
+
+
+			</div>
+
+		</div>
+ 
+ 
+		<div id="plug" class="tab">
+			<h1>Дополнительно</h1>
+			Халявные функции расширения.
+			<div class="headChild">
+				<label><input type="checkbox" id="coin">Собирать бонусные монеты</label>
+			</div>
+		</div>
+    
+	
+		<div id="info" class="tab">
+			<h1>Авторы</h1>
+			Дополнение делал <a href="http://spaces.ru/mysite/?name=UFO_HACK" title="UFO_HACK">Леха Гусак</a> и <a href="http://spaces.ru/mysite/?name=IGORstars"  title="IGORstars">Игорь Бондаренко</a><br>
+			<p>Со всеми вопросами и пожеланиями по дополнению заходить в <a href="http://skile.tk/">СОО</a></p>
+		</div>
+    
+    </div>
+
+	<script src="js\tabs.js" charset="utf-8"></script>
+	<script src="js\options.js" charset="utf-8"></script>
+</body>
+</html>

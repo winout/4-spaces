@@ -1,0 +1,68 @@
+/*Scrollbar*/
+/* ::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: #000;
+}
+
+::-webkit-scrollbar-thumb:active{
+  background-color: #000;
+} */
+::-webkit-scrollbar {
+    width: 12px;
+}::-webkit-scrollbar-track{
+    background-color:#dcdcdc;
+	border-left:1px solid #BEBEBE;
+}::-webkit-scrollbar-thumb{
+    background-color:#BEBEBE;
+}
+/*http://123456.spaces.ru/pictures/?r=main/view*/
+
+div.t_center > a:nth-of-type(1):before {
+top: 200px;
+left: 18px;
+position: absolute;
+content: url("http://www.iconsearch.ru/uploads/icons/minimal/64x64/go-previous.png");
+opacity: 0.2;
+}
+
+div.t_center > a:nth-of-type(2):before {
+top: 200px;
+left: 600px;
+position: absolute;
+content: url("http://www.iconsearch.ru/uploads/icons/minimal/64x64/go-next.png");
+opacity: 0.2;
+}
+
+div.t_center > a:nth-of-type(1):hover::before, div.t_center > a:nth-of-type(2):hover::before{
+opacity: 1;
+}
+
+div.preview_block{
+min-height: 150px;
+}
+
+/*http://spaces.ru/sidebar/?r=settings/types*/
+.drag:active, .drag:active>*:active {
+cursor: -webkit-grabbing!important;
+}
+.drag:hover, .drag>*:hover {
+cursor: -webkit-grab!important;
+}
+.drag, .drag>* {
+cursor: -webkit-grab!important;
+}
+
+/**/
